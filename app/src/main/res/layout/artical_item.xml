@@ -3,11 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="406dp"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/user"
@@ -21,19 +25,24 @@
 
         <TextView
             android:id="@+id/tvName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:text="Mary Vivian"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/user"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvArticle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="24dp"
             android:text="Ophelia"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/user"
@@ -41,8 +50,9 @@
 
         <TextView
             android:id="@+id/tvPreview"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Ophelia is a young girl whose story is passed to many generation on her rebellion against patriachal culture."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,9 +60,12 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="352dp"
-            android:layout_height="301dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="169dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvPreview"
             app:srcCompat="@drawable/article" />
